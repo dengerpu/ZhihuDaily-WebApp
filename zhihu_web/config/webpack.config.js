@@ -73,6 +73,7 @@ const sassRegex = /\.(scss|sass)$/;
 const lessRegex = /\.less$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 const lessModuleRegex = /\.module\.less$/;
+const px2rem = require('postcss-pxtorem');
 
 const hasJsxRuntime = (() => {
   if (process.env.DISABLE_NEW_JSX_TRANSFORM === 'true') {
@@ -149,6 +150,10 @@ module.exports = function (webpackEnv) {
                   // so that it honors browserslist config in package.json
                   // which in turn let's users customize the target behavior as per their needs.
                   'postcss-normalize',
+                  px2rem({
+                    rootValue: 75, // 基于lib-flexible,750设计稿,就会设置为1REM=75PX；此时在webpack编译的时候，我们也需要让px2rem插件，按照1REM=75PX，把我们测出来的并且编写的PX样式，自动转换为REM；
+                    propList: ['*'] // 对所有文件中的样式都生效{AntdMobile组件库中的样式}
+                  })
                 ]
               : [
                   'tailwindcss',
@@ -162,6 +167,10 @@ module.exports = function (webpackEnv) {
                       stage: 3,
                     },
                   ],
+                  px2rem({
+                    rootValue: 75,
+                    propList: ['*']
+                  })
                 ],
           },
           sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,

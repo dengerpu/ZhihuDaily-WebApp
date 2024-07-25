@@ -6472,6 +6472,11 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lib-flexible@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.npmmirror.com/lib-flexible/-/lib-flexible-0.3.2.tgz#06f5a74832314a2d35c12039bc9c3ca2daeaa426"
+  integrity sha512-9yowMWA70tKhKdCJDaltY0mNQG4OWo7pWKScnTp9aiSxS7s20ZYlwBRE3335nweOf5qKXVC7sDxJwMPM8/MFZg==
+
 lilconfig@^2.0.3, lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmmirror.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
@@ -7716,6 +7721,11 @@ postcss-pseudo-class-any-link@^7.1.6:
   integrity sha512-9sCtZkO6f/5ML9WcTLcIyV1yz9D1rf0tWc+ulKcvV30s0iZKS/ONyETvoWsr6vnrmW+X+KmuK3gV/w5EWnT37w==
   dependencies:
     postcss-selector-parser "^6.0.10"
+
+postcss-pxtorem@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmmirror.com/postcss-pxtorem/-/postcss-pxtorem-6.1.0.tgz#7e6410e30426adef53bad6c4c5f00cd5f586937c"
+  integrity sha512-ROODSNci9ADal3zUcPHOF/K83TiCgNSPXQFSbwyPHNV8ioHIE4SaC+FPOufd8jsr5jV2uIz29v1Uqy1c4ov42g==
 
 postcss-reduce-initial@^5.1.2:
   version "5.1.2"

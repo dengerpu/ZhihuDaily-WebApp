@@ -1,8 +1,10 @@
+import { HashRouter } from "react-router-dom";
+import RouterView from "./router";
 function App() {
   return (
-    <div className="App">
-      根组件
-    </div>
+    <HashRouter>
+      <RouterView/>
+    </HashRouter>
   );
 }
 

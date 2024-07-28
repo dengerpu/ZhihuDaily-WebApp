@@ -1,0 +1,4 @@
+export const BASE_INFO = "BASE_INFO";
+
+export const COLLECTION_LIST = "COLLECTION_LIST";
+export const COLLECTION_REMOVE = "COLLECTION_REMOVE";

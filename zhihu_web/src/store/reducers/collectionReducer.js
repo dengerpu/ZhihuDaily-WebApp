@@ -4,7 +4,7 @@ import _ from '@/assets/utils';
 let initial = {
     list: null
 };
-export default function storeReducer(state = initial, action) {
+export default function collectionReducer(state = initial, action) {
     state = _.clone(state);
     switch (action.type) {
         // ...
